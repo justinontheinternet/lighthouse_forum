@@ -285,3 +285,66 @@ Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2016-01-31 20:16:09
 
 
 Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2016-01-31 20:16:10 +0000
+
+
+Started GET "/posts" for 10.0.2.2 at 2016-01-31 20:22:59 +0000
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 59ms (Views: 57.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2016-01-31 20:22:59 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2016-01-31 20:23:00 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2016-01-31 20:23:00 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2016-01-31 20:23:00 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2016-01-31 20:23:00 +0000
+
+
+Started GET "/posts" for 10.0.2.2 at 2016-01-31 20:23:03 +0000
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 59ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2016-01-31 20:23:03 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2016-01-31 20:23:03 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2016-01-31 20:23:03 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2016-01-31 20:23:03 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2016-01-31 20:23:03 +0000
+
+
+Started GET "/posts" for 10.0.2.2 at 2016-01-31 20:23:13 +0000
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 61ms (Views: 59.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2016-01-31 20:23:13 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2016-01-31 20:23:13 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2016-01-31 20:23:13 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2016-01-31 20:23:13 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2016-01-31 20:23:13 +0000
