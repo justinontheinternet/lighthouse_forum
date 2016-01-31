@@ -1239,3 +1239,229 @@ AbstractController::ActionNotFound (The action 'create' could not be found for P
 
 
   Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.1ms)
+
+
+Started POST "/posts" for 10.0.2.2 at 2016-01-31 21:53:19 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"03XlB7/Mw+P9e0NvrIlXz8ww99i7pPNSiDve3f4Y8d8=", "post"=>{"title"=>"He's alright, I guess", "author"=>"???", "text"=>"If you're into that sort of thing."}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (13.0ms)[0m  [1mINSERT INTO "posts" ("author", "created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["author", "???"], ["created_at", Sun, 31 Jan 2016 21:53:19 UTC +00:00], ["text", "If you're into that sort of thing."], ["title", "He's alright, I guess"], ["updated_at", Sun, 31 Jan 2016 21:53:19 UTC +00:00]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 67ms (ActiveRecord: 18.0ms)
+
+
+Started GET "/posts" for 10.0.2.2 at 2016-01-31 21:53:19 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 59ms (Views: 56.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2016-01-31 21:53:19 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2016-01-31 21:53:19 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2016-01-31 21:53:19 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2016-01-31 21:53:19 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2016-01-31 21:53:19 +0000
+
+
+Started GET "/posts/4/edit" for 10.0.2.2 at 2016-01-31 22:03:09 +0000
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (1.4ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "4"]]
+  Rendered posts/edit.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 89ms (Views: 59.6ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2016-01-31 22:03:09 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2016-01-31 22:03:09 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2016-01-31 22:03:09 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2016-01-31 22:03:09 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2016-01-31 22:03:09 +0000
+
+
+Started GET "/posts/3/edit" for 10.0.2.2 at 2016-01-31 22:03:19 +0000
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (1.4ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered posts/edit.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 62ms (Views: 58.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2016-01-31 22:03:20 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2016-01-31 22:03:20 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2016-01-31 22:03:20 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2016-01-31 22:03:20 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2016-01-31 22:03:20 +0000
+
+
+Started GET "/posts/3/edit" for 10.0.2.2 at 2016-01-31 22:03:30 +0000
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (1.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered posts/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 63ms (Views: 60.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2016-01-31 22:03:30 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2016-01-31 22:03:30 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2016-01-31 22:03:30 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2016-01-31 22:03:30 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2016-01-31 22:03:30 +0000
+
+
+Started GET "/posts/3/edit" for 10.0.2.2 at 2016-01-31 22:53:03 +0000
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (1.9ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered posts/edit.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 61ms (Views: 57.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2016-01-31 22:53:03 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2016-01-31 22:53:03 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2016-01-31 22:53:03 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2016-01-31 22:53:04 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2016-01-31 22:53:04 +0000
+
+
+Started GET "/posts/3/edit" for 10.0.2.2 at 2016-01-31 22:53:26 +0000
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (1.9ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered posts/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 62ms (Views: 58.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2016-01-31 22:53:26 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2016-01-31 22:53:26 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2016-01-31 22:53:26 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2016-01-31 22:53:26 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2016-01-31 22:53:26 +0000
+
+
+Started GET "/posts/4/edit" for 10.0.2.2 at 2016-01-31 22:53:32 +0000
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (1.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  Rendered posts/edit.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 60ms (Views: 57.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2016-01-31 22:53:32 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2016-01-31 22:53:32 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2016-01-31 22:53:32 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2016-01-31 22:53:33 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2016-01-31 22:53:33 +0000
+
+
+Started GET "/posts/5/edit" for 10.0.2.2 at 2016-01-31 22:53:44 +0000
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPost Load (1.6ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "5"]]
+  Rendered posts/edit.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 60ms (Views: 57.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2016-01-31 22:53:44 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2016-01-31 22:53:44 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2016-01-31 22:53:44 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2016-01-31 22:53:44 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2016-01-31 22:53:44 +0000
+
+
+Started PATCH "/posts/5" for 10.0.2.2 at 2016-01-31 22:53:55 +0000
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"03XlB7/Mw+P9e0NvrIlXz8ww99i7pPNSiDve3f4Y8d8=", "post"=>{"title"=>"He's alright, I guess", "author"=>"???", "text"=>"If you're into that sort of thing. I'm not."}, "commit"=>"Save", "id"=>"5"}
+  [1m[36mPost Load (1.5ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.8ms)[0m  [1mUPDATE "posts" SET "text" = ?, "updated_at" = ? WHERE "posts"."id" = 5[0m  [["text", "If you're into that sort of thing. I'm not."], ["updated_at", Sun, 31 Jan 2016 22:53:55 UTC +00:00]]
+  [1m[35m (2.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 16ms (ActiveRecord: 8.1ms)
+
+
+Started GET "/posts" for 10.0.2.2 at 2016-01-31 22:53:55 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 57ms (Views: 55.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2016-01-31 22:53:55 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2016-01-31 22:53:55 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2016-01-31 22:53:55 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2016-01-31 22:53:55 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2016-01-31 22:53:55 +0000
